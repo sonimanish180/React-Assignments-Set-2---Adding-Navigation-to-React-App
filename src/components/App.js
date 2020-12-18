@@ -9,7 +9,8 @@ import LocationDisplay from "./LocationDisplay";
 class App extends Component {
   render() {
     return (
-      <div id="main">
+      <>
+        <div id="main"></div>
         {/* Do not remove the main div */}
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
@@ -23,7 +24,7 @@ class App extends Component {
         <LocationDisplay />
         {/* <Home />
         <About /> */}
-      </div>
+      </>
     );
   }
 }
