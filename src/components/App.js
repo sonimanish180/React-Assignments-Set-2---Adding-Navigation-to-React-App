@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import "../styles/App.css";
 import About from "./About";
 import Badpage from "./BadPage";
@@ -11,8 +11,10 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
-        <a href="/">Home</a>
-        <a href="/about">About</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        {/* <a href="/">Home</a>
+        <a href="/about">About</a> */}
         <Switch>
           <Route exact path="/about" render={() => <About />} />
           <Route exact path="/" render={() => <Home />} />
