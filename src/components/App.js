@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "../styles/App.css";
 import About from "./About";
+import Badpage from "./BadPage";
 import Home from "./Home";
+import LocationDisplay from "./LocationDisplay";
 
 class App extends Component {
   render() {
@@ -12,9 +14,11 @@ class App extends Component {
         <a href="/">Home</a>
         <a href="/about">About</a>
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/" component={Home} />
+          <Route exact path="/about" render={() => <About />} />
+          <Route exact path="/" render={() => <Home />} />
+          <Route component={Badpage} />
         </Switch>
+        <LocationDisplay />
         {/* <Home />
         <About /> */}
       </div>

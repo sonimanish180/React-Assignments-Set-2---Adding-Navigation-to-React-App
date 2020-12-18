@@ -1,5 +1,11 @@
 import React from "react";
 
 export default function Home() {
-  return <div>You are home.</div>;
+  // const path = this.props.path;
+  return (
+    <>
+      <div>You are home.</div>
+      {/* <LocationDisplay paths={"home"} /> */}
+    </>
+  );
 }

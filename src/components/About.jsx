@@ -9,5 +9,11 @@ import React from "react";
 
 // export default About;
 export default function About() {
-  return <div>You are on the about page.</div>;
+  // const path = this.props.path;
+  return (
+    <>
+      <div>You are on the about page.</div>
+      {/* <LocationDisplay paths={"about"} /> */}
+    </>
+  );
 }
